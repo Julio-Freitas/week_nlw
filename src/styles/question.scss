@@ -1,0 +1,122 @@
+#question-component {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    max-width: 800px;
+    max-height: 147px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    .content{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+   
+      
+        p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #29292E;
+        }
+
+        .footer{
+            padding: 10px 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            > div:first-child{
+                display: flex;
+                align-items: center;
+                flex: 9;
+
+                > p{
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #737380;
+                    order: 1;
+                }
+                img {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    order: 0;
+                }
+       
+            }
+
+            .icons-footer {
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+               
+
+                button{
+                    background-color: transparent;
+                    border: 0;
+                    cursor: pointer;
+                    transition: all .5s ease-in-out;
+                
+                }
+                button:hover{                   
+                   transform: scale(1.1);
+                   img{
+                    filter: drop-shadow(1px 0px 1px gray)
+                   }
+                }
+            }
+            .like-button {
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                flex: 1;
+                
+                > span{
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-align: left;                    
+                    color: #737380;
+                    padding-right: 5px;
+                }             
+                
+            }
+            .has-Like {
+                svg{
+                    path {
+                        stroke:#835AFD
+                    }
+                 
+                }
+            }
+        }
+    }
+}
+
+.isHighlighted {
+    transition: all 0.5s;
+    background: #DBDCDD !important;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.04);
+    svg.check-icon{
+        circle{          
+            stroke:#835AFD !important;            
+        }
+        path {
+            stroke:#835AFD !important;
+        }
+    }
+}

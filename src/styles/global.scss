@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #f8f8f8;
+    --color-global: #29292e;
+    --font-secondary: 'Poppins';
+    --font-main: 'Roboto'
+}
+body{
+    background-color:var(--background-color);
+    color: var(--color-global);
+}
+
+body, input, button {
+    font: 400 16px var(--font-main);
+} 
